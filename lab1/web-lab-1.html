@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+    <script>
+        function onClick() {
+            console.log("onClick called");
+            var paragraph = document.querySelector("#paragraph");
+            paragraph.innerHTML = "This is not a paragraph. :P";
+            alert("test1");
+            alert("test2");
+        }
+
+        function goToPage() {
+            var url = document.getElementById("address").value;
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <style>
+
+        .list-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>This is a title.</h1>
+<p id="paragraph">This is a paragraph.</p>
+<button onclick="onClick()">Click me</button>
+
+<div style="margin-top: 1rem;">
+    <label>Web address: </label>
+    <input id="address" type="text">
+    <button type="button" onclick="goToPage()">Go to page</button>
+</div>
+
+<h2 style="margin-top: 3rem;">Shaaaapes</h2>
+
+<ul type="square">
+    <li>
+        <span>Square</span>
+        <img src="pic_trulli.jpg" class="list-img">
+    </li>
+    <li>
+        <span>Circle</span>
+        <img src="img_girl.jpg" class="list-img">
+    </li>
+    <li>
+        <span>Rectangle</span>
+        <img src="img_chania.jpg" class="list-img">
+    </li>
+</ul>
+
+<table>
+    <tr>
+        <th>Shape name</th>
+        <th>Picture</th>
+    </tr>
+    <tr>
+        <td><span>Square</span></td>
+        <td><img src="pic_trulli.jpg" class="list-img"></td>
+    </tr>
+    <tr>
+        <td><span>Circle</span></td>
+        <td><img src="img_girl.jpg" class="list-img"></td>
+    </tr>
+    <tr>
+        <td><span>Rectangle</span></td>
+        <td><img src="img_chania.jpg" class="list-img"></td>
+    </tr>
+</table>
+
+<h3 style="margin-top: 2rem;">Add shape</h3>
+
+<form onsubmit="alert('Shape added')">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="image">Image URL</label><br>
+    <input type="text" id="image" name="image"><br><br>
+    <input type="submit" value="Add">
+</form>
+
+</body>
+</html>
+

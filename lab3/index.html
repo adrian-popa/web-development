@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - cnn.com</title>
+
+    <link rel="preload" href="https://edition.i.cdn.cnn.com/.a/fonts/icons/2.4.10/cnn-icons.woff2" as="font"
+          type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--Develop an html+css web document that looks like the following web page: http://cnn.com. You should clone about one screen of this web page (not the whole web page) and your html document should look approximately 90% as the given web page. No interactivity should be added (e.g. javascript, :hover effects etc.) and you are not allowed to use any css or javascript library.-->
+
+<header class="nav-bar-container">
+    <div class="nav-bar-content">
+        <a href="https://edition.cnn.com/" aria-label="CNN">
+            <img src="assets/images/cnn-logo.png" alt="CNN logo" class="nav-bar-logo">
+        </a>
+        <nav class="nav-bar-links">
+            <ul>
+                <li data-section="world">
+                    <a href="https://edition.cnn.com/world" title="visit the World section">World</a>
+                </li>
+                <li data-section="us politics">
+                    <a href="https://edition.cnn.com/politics" title="visit the US Politics section">US
+                        Politics</a>
+                </li>
+                <li data-section="business">
+                    <a href="https://edition.cnn.com/business" title="visit the Business section">Business</a>
+                </li>
+                <li data-section="health">
+                    <a href="https://edition.cnn.com/health" title="visit the Health section">Health</a>
+                </li>
+                <li data-section="entertainment">
+                    <a href="https://edition.cnn.com/entertainment" title="visit the Entertainment section">Entertainment</a>
+                </li>
+                <li data-section="style">
+                    <a href="https://edition.cnn.com/style" title="visit the Style section">Style</a>
+                </li>
+                <li data-section="travel">
+                    <a href="https://edition.cnn.com/travel" title="visit the Travel section">Travel</a>
+                </li>
+                <li data-section="sports">
+                    <a href="https://edition.cnn.com/sport" title="visit the Sports section">Sports</a>
+                </li>
+                <li data-section="videos">
+                    <a href="https://edition.cnn.com/videos" title="visit the Videos section">Videos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-bar-edition">
+            <div role="button" class="edition-picker-toggle">
+                <span>Edition</span>
+                <svg width="64" height="64" viewBox="0 0 20 20" fill="" aria-hidden="true">
+                    <path d="M19.33,4.3a1.65,1.65,0,0,0-2.16.25L10,12h0L2.84,4.55A1.67,1.67,0,0,0,.66,4.3,1.74,1.74,0,0,0,.47,6.85l8.28,8.62a1.73,1.73,0,0,0,2.5,0l8.28-8.62A1.72,1.72,0,0,0,19.33,4.3Z"></path>
+                </svg>
+            </div>
+            <button class="search-button">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 64 64" fill="currentColor"
+                     aria-hidden="true">
+                    <path d="M55.3,51.89,42.46,39a19.22,19.22,0,1,0-3.38,3.43L51.9,55.29a2.38,2.38,0,0,0,3.4,0A2.42,2.42,0,0,0,55.3,51.89ZM11.2,27.28a16,16,0,1,1,16,16.07A16.07,16.07,0,0,1,11.2,27.28Z"></path>
+                </svg>
+            </button>
+        </div>
+        <button class="menu-button">
+            <svg class="menu-icon" width="24" height="24" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                <path d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
+                <path d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
+                <path d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<div class="page-container">
+    <section class="top-container">
+        <div class="headlines-container">
+            <div class="cn cn-list-hierarchical-horizontal-simple">
+                <ul>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-04-06-20/index.html">
+                                <span class="cd__pre-headline">CORONAVIRUS: </span>
+                                <span class="cd__headline-text">Live updates</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.com/specials/world/coronavirus-outbreak-intl-hnk">
+                                <span class="cd__headline-text">All coronavirus stories</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.com/travel/article/coronavirus-travel-industry-changes/index.html">
+                                <span class="cd__headline-text">How travel will change</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.comhttps://edition.cnn.com/interactive/2020/health/coronavirus-maps-and-cases/">
+                                <span class="cd__headline-text">Global virus map</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.comhttps://edition.cnn.com/audio/podcasts/corona-virus">
+                                <span class="cd__headline-text">Podcast</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.com/specials/coronavirus-newsletter">
+                                <span class="cd__headline-text">Newsletter</span>
+                            </a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="cd__headline">
+                            <a href="https://edition.cnn.com/style/article/asia-men-hair-loss-bald-scn-wellness/index.html">
+                                <span class="cd__pre-headline">Trending:</span>
+                                <span class="cd__headline-text">Asian baldness</span>
+                            </a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="articles-container">
+            <div class="column-1">
+                <ul class="cn cn-list">
+                    <li>
+                        <article class="cd cd--card cd--article">
+                            <a href="https://edition.cnn.com/2020/04/05/health/inside-new-york-coronavirus-hospital/index.html"
+                               class="link-banner">
+                                <h2 class="banner-text">
+                                    A war-like scene in one New York hospital
+                                </h2>
+                            </a>
+                            <div class="cd__wrapper">
+                                <div class="media">
+                                    <a href="https://edition.cnn.com/2020/04/05/health/inside-new-york-coronavirus-hospital/index.html">
+                                        <img alt="Dr. Lorenzo Paladino"
+                                             src="https://cdn.cnn.com/cnnnext/dam/assets/200405150329-07-inside-coronavirus-hospital-large-tease.jpg">
+                                    </a>
+                                </div>
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/05/health/inside-new-york-coronavirus-hospital/index.html">
+                                                <span class="cd__headline-text">
+                                                    <strong>One emergency room. 40 minutes. Six patients went into cardiac arrest. Four died before making it out of the ER</strong>
+                                                </span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-04-06-20/index.html">
+                                            <span class="cd__pre-headline">Live updates: </span>
+                                            <span class="cd__headline-text">Coronavirus cases worldwide top 1.2 million</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/travel/article/airlines-social-distancing-policies-during-coronavirus-trnd/index.html">
+                                            <span class="cd__headline-text">If you must fly, here are some tips to do it safely</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/videos/health/2020/04/04/coronavirus-covid-19-masks-asia-stout-pkg-vpx.cnn">
+                                            <span class="cd__headline-text">The answer to the mask debate may come from Asia</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/06/uk/boris-johnson-coronavirus-hospital-gbr-intl/index.html">
+                                            <span class="cd__headline-text">Boris Johnson 'remains in charge' after hospital admission</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/videos/politics/2020/04/05/jerome-adams-surgeon-general-pearl-harbor-coronavirus-nr-vpx.cnn">
+                                            <span class="cd__headline-text">Surgeon general: This week will be 'Pearl Harbor moment'</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/05/politics/brett-crozier-coronavirus-navy/index.html">
+                                            <span class="cd__headline-text">New York Times: Ex-Navy commander who sounded alarm over coronavirus
+                                                outbreak on ship tests positive for virus</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-2">
+                <ul class="cn cn-list-large-vertical">
+                    <li class="cn__listitem">
+                        <article class="cd cd--card cd--article cd--large cd--vertical">
+                            <div class="cd__wrapper">
+                                <div class="media">
+                                    <a href="https://edition.cnn.com/2020/04/06/asia/china-coronavirus-tourist-warning-intl-hnk/index.html">
+                                        <img alt=""
+                                             src="https://cdn.cnn.com/cnnnext/dam/assets/200406153843-01-huangshan-tourists-coronavirus-medium-tease.jpg">
+                                    </a>
+                                </div>
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/06/asia/china-coronavirus-tourist-warning-intl-hnk/index.html">
+                                            <span class="cd__headline-text">Tourist sites packed as China comes out of lockdown, but experts say risk still high</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="cn__listitem">
+                        <article class="cd cd--card cd--article cd--large cd--vertical">
+                            <div class="cd__wrapper">
+                                <div class="media">
+                                    <a href="https://edition.cnn.com/2020/04/06/us/plasma-donor-coronavirus/index.html">
+                                        <img alt="Jason Garcia"
+                                             src="https://cdn.cnn.com/cnnnext/dam/assets/200406020756-plasma-donor-coronavirus-medium-tease.jpg">
+                                    </a>
+                                </div>
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/06/us/plasma-donor-coronavirus/index.html">
+                                            <span class="cd__headline-text">He recovered from the coronavirus and now he could save the lives of others</span>
+                                        </a>
+                                    </h3>
+                                    <div class="cd__description">
+                                        <a href="https://edition.cnn.com/2020/04/05/us/tiger-coronavirus-new-york-trnd/index.html"
+                                           target="_blank">• A tiger at a zoo tests positive for coronavirus</a>
+                                        <br>
+                                        <a href="https://edition.cnn.com/2020/04/04/us/spreading-germs-nurse-trnd/index.html"
+                                           target="_blank">• Nurse shows how fast germs spread even when wearing
+                                            gloves</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-3">
+                <ul class="cn cn-list-hierarchical-xs">
+                    <li>
+                        <article class="cd cd--card cd--article cd--large cd--vertical">
+                            <div class="cd__wrapper">
+                                <div class="media">
+                                    <a href="https://edition.cnn.com/2020/04/05/politics/white-house-malaria-drug-hydroxychloroquine-disagreement/index.html">
+                                        <img alt="U.S. President Donald Trump exits after speaking and not taking any questions during a press briefing with the White House Coronavirus Task Force team."
+                                             src="https://cdn.cnn.com/cnnnext/dam/assets/200406011118-coronavirus-press-briefing-0309-medium-tease.jpg">
+                                    </a>
+                                </div>
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/05/politics/white-house-malaria-drug-hydroxychloroquine-disagreement/index.html">
+                                            <span class="cd__headline-text">Heated disagreement breaks out in Situation Room over hydroxychloroquine</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--video cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/videos/health/2020/04/04/uk-coronavirus-evolution-walsh-pkg-vpx.cnn">
+                                            <span class="cd__headline-text">Has Covid-19 been in humans longer than we thought?</span>
+                                            <span class="cd__headline-icon cnn-icon"></span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/05/politics/coronavirus-hydroxychloroquine-trump-briefing/index.html">
+                                            <span class="cd__headline-text">Trump doubles down on unproven drugs to treat virus</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/world/live-news/coronavirus-pandemic-04-06-20/h_890fbc9bf23b4147d2aa225389d42b87">
+                                            <span class="cd__headline-text">Trump calls Queen a 'wonderful woman'</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/2020/04/05/asia/indian-railways-coronavirus-hospitals-intl-hnk/index.html">
+                                            <span class="cd__headline-text">India closes its railways for first time in 167 years. Trains are being turned into hospitals</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--video cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/videos/world/2020/04/06/india-coronavirus-covid-19-vigil-dharavi-slum-sud-intl-hnk-vpx.cnn">
+                                            <span class="cd__headline-text">See images of candlelit vigil held in India</span>
+                                            <span class="cd__headline-icon cnn-icon"></span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--video cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/videos/world/2020/04/05/fareeds-take-coronavirus-global-crisis-gps-vpx.cnn">
+                                            <span class="cd__pre-headline">zakaria</span>
+                                            <span class="cd__headline-text">US abandoned crucial role</span>
+                                            <span class="cd__headline-icon cnn-icon"></span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/style/article/sergio-rossi-intl-scli/index.html">
+                                            <span class="cd__headline-text">Covid-19 kills Italian 'master' shoe designer</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="cd cd--card cd--article cd--extra-small">
+                            <div class="cd__wrapper">
+                                <div class="cd__content">
+                                    <h3 class="cd__headline">
+                                        <a href="https://edition.cnn.com/style/article/asia-men-hair-loss-bald-scn-wellness/index.html">
+                                            <span class="cd__headline-text">Asian men's hairlines are receding faster than ever before. Here's why</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

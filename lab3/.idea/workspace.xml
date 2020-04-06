@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05a5b08a-25e5-47c5-84e7-1cf45fec4990" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d5d89412-a063-4c46-930c-8220b5fa0bbb" />
+  </component>
+  <component name="ProjectId" id="1ZqojUbBUdFOmvdrJ258q7XzRbE" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lab3/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05a5b08a-25e5-47c5-84e7-1cf45fec4990" name="Default Changelist" comment="" />
+      <created>1585576119722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585576119722</updated>
+      <workItem from="1585576123793" duration="2088000" />
+      <workItem from="1585588998211" duration="96000" />
+      <workItem from="1585590530175" duration="1049000" />
+      <workItem from="1586076948008" duration="533000" />
+      <workItem from="1586091307459" duration="15000" />
+      <workItem from="1586159906540" duration="11946000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585637354969">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1585637354969" />
+    <state width="1878" height="404" key="GridCell.Tab.0.bottom" timestamp="1586168098675">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098675" />
+    <state width="1878" height="404" key="GridCell.Tab.0.center" timestamp="1586168098674">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098674" />
+    <state width="1878" height="404" key="GridCell.Tab.0.left" timestamp="1586168098673">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098673" />
+    <state width="1878" height="404" key="GridCell.Tab.0.right" timestamp="1586168098674">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098674" />
+    <state width="1878" height="404" key="GridCell.Tab.1.bottom" timestamp="1586168098676">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098676" />
+    <state width="1878" height="404" key="GridCell.Tab.1.center" timestamp="1586168098675">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098675" />
+    <state width="1878" height="404" key="GridCell.Tab.1.left" timestamp="1586168098675">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098675" />
+    <state width="1878" height="404" key="GridCell.Tab.1.right" timestamp="1586168098676">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="404" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1586168098676" />
+    <state x="615" y="222" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586166250302">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="615" y="222" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1586166250302" />
+    <state x="672" y="534" width="712" height="518" key="find.popup" timestamp="1586171760170">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="672" y="534" width="712" height="518" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1586171760170" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1586171343132">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1586171343132" />
+  </component>
+</project>

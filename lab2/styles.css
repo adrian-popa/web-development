@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100% - 40px);
+    margin: 20px;
+}
+
+.element-11 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(13, 71, 161);
+    background: radial-gradient(circle, rgba(13, 71, 161, 1) 0%, rgba(33, 150, 243, 1) 70%, rgba(100, 181, 246, 0) 95%);
+    padding: 0.5rem 16rem;
+    text-align: center;
+}
+
+.element-11 p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.element-24 {
+    width: 128px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1976D2;
+    padding: 1rem;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 1s linear 0.1s;
+    text-align: center;
+}
+
+.element-24 .hovered {
+    display: none;
+}
+
+.element-24:hover {
+    top: 100%;
+    left: 100%;
+    transform: translate(-200px, -104px);
+    background-color: #D32F2F;
+}
+
+.element-24:hover .hover-me {
+    display: none;
+}
+
+.element-24:hover .hovered {
+    display: inline;
+}
+
+.element-24 span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+}
