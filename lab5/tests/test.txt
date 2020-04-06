@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parser test</title>
+</head>
+<body>
+
+<div class="page-container">
+    <h1>Welcome to SCS Webmail redirect</h1>
+    <p>Access SCS Webmail by following this link: <a href="http://www.scs.ubbcluj.ro/webmail/">http://www.scs.ubbcluj.ro/webmail/</a></p>
+
+    <p>Top sites:</p>
+    <ul>
+        <li>
+            <a href="http://google.com">Google</a>
+        </li>
+        <li>
+            <a href="http://facebook.com">Facebook</a>
+        </li>
+        <li>
+            <a href="http://www.scs.ubbcluj.ro/phpMyAdmin/">SCS phpMyAdmin</a>
+        </li>
+        <li>
+            <a href="http://youtube.com">YouTube</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

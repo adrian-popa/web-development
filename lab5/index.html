@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function onParseDocument() {
+            const selectedDocument = document.getElementById('document').files[0];
+
+            const filename = selectedDocument.name;
+            const type = selectedDocument.type;
+
+            const reader = new FileReader();
+
+            reader.addEventListener('load', function (e) {
+                const documentText = e.target.result;
+
+                const iframe = document.createElement('iframe');
+                iframe.setAttribute('id', 'documentFrame');
+                iframe.setAttribute('style', 'display: none;');
+
+                document.body.appendChild(iframe);
+
+                iframe.contentWindow.document.write(documentText);
+
+                const anchors = iframe.contentWindow.document.body.querySelectorAll('a[href^="http://www.scs.ubbcluj.ro"]');
+
+                anchors.forEach(anchor => {
+                    const anchorParent = anchor.parentNode;
+                    anchorParent.removeChild(anchor);
+                });
+
+                const parsedText = new XMLSerializer().serializeToString(iframe.contentWindow.document);
+
+                const blob = new Blob([parsedText], {type: type});
+
+                const a = document.createElement('a'),
+                    url = URL.createObjectURL(blob);
+
+                a.href = url;
+                a.download = filename;
+                a.click();
+
+                setTimeout(function () {
+                    document.body.removeChild(iframe);
+                    window.URL.revokeObjectURL(url);
+                }, 0);
+            });
+
+            reader.readAsText(selectedDocument);
+        }
+    </script>
+</head>
+<body>
+
+<!--Write a javascript which removes all the <a> tags from a document if their href attribute begins with "http://www.scs.ubbcluj.ro".-->
+
+<label for="document">Choose a document to be parsed (text/html):</label>
+<input id="document" type="file" name="avatar" accept="text/plain, text/html">
+
+<button type="submit" onclick="onParseDocument()">Parse</button>
+
+</body>
+</html>
