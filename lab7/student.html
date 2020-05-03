@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Student</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery-3.5.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const username = localStorage.getItem('username');
+            const userType = localStorage.getItem('user_type')
+
+            if (username) {
+                if (userType === 'professor') {
+                    window.location.replace('./professor.html');
+                }
+            } else {
+                window.location.replace('./login.html');
+            }
+
+            $('.title #username').text(username);
+
+            $.get("./php/student-showGrade-GET.php", {username},
+                function (grade, status) {
+                    if (status === 'success') {
+                        $('p #grade').text(grade);
+                    }
+                });
+        });
+
+        function logout() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('user_type');
+
+            window.location.replace('./login.html');
+        }
+    </script>
+</head>
+<body>
+
+<div class="student-container">
+    <h2 class="title">Hello, <span id="username"></span>!</h2>
+    <p>Your overall grade assigned by your professor is: <b><span id="grade"></span></b>. Keep it up!</p>
+
+    <a class="logout" onclick="logout()">Logout</a>
+</div>
+
+</body>
+</html>

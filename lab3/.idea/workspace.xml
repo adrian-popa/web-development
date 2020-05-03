@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05a5b08a-25e5-47c5-84e7-1cf45fec4990" name="Default Changelist" comment="" />
+    <list default="true" id="05a5b08a-25e5-47c5-84e7-1cf45fec4990" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/billy-huynh-W8KTS-mhFUE-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/cassi-josh-lhnOvu72BM8-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/hao-wang-pVq6YhmDPtk-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/pawel-czerwinski-tMbQpdguDVQ-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/photo-boards-KZNTEn2r6tw-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/assets/images/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/jquery-3.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/lab6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab6/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="d5d89412-a063-4c46-930c-8220b5fa0bbb" />
   </component>
   <component name="ProjectId" id="1ZqojUbBUdFOmvdrJ258q7XzRbE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -23,10 +45,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,6 +134,10 @@
       <workItem from="1586076948008" duration="533000" />
       <workItem from="1586091307459" duration="15000" />
       <workItem from="1586159906540" duration="11946000" />
+      <workItem from="1586249782319" duration="450000" />
+      <workItem from="1586251247576" duration="83000" />
+      <workItem from="1586807231025" duration="380000" />
+      <workItem from="1586856048919" duration="311000" />
     </task>
     <servers />
   </component>

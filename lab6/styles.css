@@ -1,0 +1,32 @@
+html, body {m
+}
+
+body {
+    margin: 20px;
+}
+
+.game-container {
+    height: calc(100% - 40px);
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.game-canvas {
+    width: 100%;
+    height: calc(100% - 38px);
+}
+
+.you-won {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+}
+
+.you-won.hidden {
+    display: none;
+}
