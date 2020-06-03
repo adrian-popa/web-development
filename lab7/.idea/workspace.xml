@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faf2f2ac-d74d-401a-a5ec-75543533b229" name="Default Changelist" comment="" />
+    <list default="true" id="faf2f2ac-d74d-401a-a5ec-75543533b229" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/artifacts/lab8_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/jackson_annotations_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/jackson_core_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/jackson_databind_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/javax_websocket_api_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/libraries/mysql_connector_java_5_1_47_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lab8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/jackson-annotations-2.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/jackson-core-2.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/jackson-databind-2.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/javax.websocket-api-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/lib/mysql-connector-java-5.1.47-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/controller/IntroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/domain/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/model/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/utils/GameSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/utils/MessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/weblab8/utils/MessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/game.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/js/ajax-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/web/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,12 +54,14 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="d5d89412-a063-4c46-930c-8220b5fa0bbb" />
   </component>
   <component name="ProjectId" id="1b7fRTkILHP4OrIrn6YFwp0AOF4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -107,6 +152,19 @@
       <workItem from="1587988046765" duration="1308000" />
       <workItem from="1588509701719" duration="14065000" />
       <workItem from="1588527982829" duration="196000" />
+      <workItem from="1588528337400" duration="1202000" />
+      <workItem from="1588665929125" duration="747000" />
+      <workItem from="1589787285997" duration="697000" />
+      <workItem from="1589815670404" duration="401000" />
+      <workItem from="1589816111669" duration="434000" />
+      <workItem from="1589817684596" duration="995000" />
+      <workItem from="1589840384657" duration="102000" />
+      <workItem from="1589872136340" duration="8000" />
+      <workItem from="1591079781810" duration="1873000" />
+      <workItem from="1591083799651" duration="3236000" />
+      <workItem from="1591128933239" duration="2058000" />
+      <workItem from="1591171243018" duration="3791000" />
+      <workItem from="1591187580457" duration="551000" />
     </task>
     <servers />
   </component>
@@ -118,14 +176,15 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="779" y="526" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1588523512899" />
-    <state x="661" y="341" width="751" height="518" key="find.popup" timestamp="1588522837473">
+    <state x="661" y="341" width="751" height="522" key="find.popup" timestamp="1591186487796">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="661" y="341" width="751" height="518" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1588522837473" />
-    <state x="328" y="203" key="new project wizard" timestamp="1588516295034">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="661" y="341" width="751" height="522" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1591186487796" />
+    <state x="247" y="131" key="new project wizard" timestamp="1591080203639">
+      <screen x="0" y="23" width="1920" height="1100" />
     </state>
     <state x="328" y="203" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1588516295034" />
+    <state x="247" y="131" key="new project wizard/1920.23.1920.1057/0.23.1920.1100@1920.23.1920.1057" timestamp="1591080203639" />
     <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1588523626738">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

@@ -1,0 +1,62 @@
+﻿<Properties StartupConfiguration="{EABA6316-AEF3-4D84-BFE5-ADF68AD6C692}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebLab9/Views/Home/Login.cshtml">
+    <Files>
+      <File FileName="WebLab9/Controllers/HomeController.cs" Line="23" Column="41" />
+      <File FileName="WebLab9/Views/Home/Index.cshtml" Line="4" Column="1" />
+      <File FileName="WebLab9/Controllers/LoginController.cs" Line="38" Column="17" />
+      <File FileName="WebLab9/Controllers/ProfessorController.cs" Line="76" Column="66" />
+      <File FileName="WebLab9/Controllers/StudentController.cs" Line="21" Column="28" />
+      <File FileName="WebLab9/Views/Home/Professor.cshtml" Line="138" Column="6" />
+      <File FileName="WebLab9/Views/Shared/_Layout.cshtml" Line="19" Column="21" />
+      <File FileName="WebLab9/Models/ErrorViewModel.cs" Line="5" Column="18" />
+      <File FileName="WebLab9/Models/User.cs" />
+      <File FileName="WebLab9/Models/Student.cs" Line="1" Column="1" />
+      <File FileName="WebLab9/Views/Home/Login.cshtml" Line="16" Column="14" />
+      <File FileName="WebLab9/Views/Home/Student.cshtml" Line="24" Column="22" />
+      <File FileName="WebLab9/Startup.cs" Line="55" Column="37" />
+      <File FileName="WebLab9/Program.cs" Line="1" Column="1" />
+      <File FileName="WebLab9/wwwroot/css/site.css" Line="26" Column="1" />
+      <File FileName="WebLab9/wwwroot/css/styles.css" Line="27" Column="2" />
+      <File FileName="WebLab9/appsettings.json" Line="1" Column="1" />
+      <File FileName="WebLab9/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="WebLab9/DataAbstractionLayer/DAL.cs" Line="199" Column="21" />
+      <File FileName="WebLab9/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="WebLab9/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="WebLab9/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="WebLab9/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="WebLab9/wwwroot/js/site.js" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebLab9" expanded="True">
+            <Node name="WebLab9" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataAbstractionLayer" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Login.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebLab9 PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>
