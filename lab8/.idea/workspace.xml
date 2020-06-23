@@ -7,48 +7,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cb23ae8-3ed5-428c-bee5-4a29712cec95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lab8_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_databind_2_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.websocket-api-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/json-simple-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.47-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/controller/IntroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/domain/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/model/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/utils/GameSessionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/utils/MessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weblab8/utils/MessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/game.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/ajax-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/artifacts/jsp_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/libraries/javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/libraries/mysql_connector_java_5_1_47_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/lib/mysql-connector-java-5.1.47-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/controller/IntroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/domain/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/model/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/utils/GameSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/utils/MessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/src/weblab8/utils/MessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/js/ajax-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/jsp/web/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/php.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/assets.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/jquery-3.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/php/login-POST.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/php/showAssets-GET.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/php/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebLab9/.vs/WebLab9/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebLab9/.vs/WebLab9/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebLab9/WebLab9/Controllers/ProfessorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WebLab9/WebLab9/Controllers/ProfessorController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +285,9 @@
       <workItem from="1591083772810" duration="25000" />
       <workItem from="1591136377978" duration="340000" />
       <workItem from="1591168311442" duration="1224000" />
-      <workItem from="1591186681611" duration="2872000" />
+      <workItem from="1591186681611" duration="2931000" />
+      <workItem from="1592841850248" duration="352000" />
+      <workItem from="1592895123931" duration="525000" />
     </task>
     <servers />
   </component>
@@ -292,10 +300,10 @@
     </state>
     <state x="448" y="143" key="#Project_Structure/0.0.1920.1200@0.0.1920.1200" timestamp="1589909107289" />
     <state x="448" y="154" key="#Project_Structure/0.23.1920.1100@0.23.1920.1100" timestamp="1589871405401" />
-    <state x="320" y="193" width="1371" height="869" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591169718486">
+    <state x="320" y="193" width="1371" height="869" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592895198449">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="320" y="193" width="1371" height="869" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1591169718486" />
+    <state x="320" y="193" width="1371" height="869" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1592895198449" />
     <state x="773" y="310" key="#com.intellij.ide.util.MemberChooser" timestamp="1590315092043">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -448,6 +456,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1589880361059" />
+    <state x="301" y="202" key="new project wizard" timestamp="1592842822281">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="301" y="202" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1592842822281" />
     <state x="625" y="285" width="670" height="675" key="run.anything.popup" timestamp="1590476266151">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

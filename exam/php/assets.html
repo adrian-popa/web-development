@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Assets</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery-3.5.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const id = localStorage.getItem('user_id');
+            const username = localStorage.getItem('user_username');
+
+            if (!username) {
+                window.location.replace('./login.html');
+            }
+
+            $('.title #username').text(username);
+
+            const content = $('.content');
+
+            $.get("./php/showAssets-GET.php", {id},
+                function (assetsData, status) {
+                    if (status === 'success') {
+                        // Add pagination for students content.
+                        const pagination = $('<div class="pagination"></div>')
+
+                        const assetsContent = $('<div class="assets">${assetsData}</div>');
+
+                        pagination.append('<a href="#">&laquo;</a>')
+
+                        assetsContent.find('.assets .page-content').each(function (index, object) {
+                            const page = index + 1;
+                            const pageLink = $(`<a class="page-links" onclick="selectPage(event, ${groupId}, ${page})">${page}</a>`);
+
+                            if (index === 0) {
+                                pageLink.addClass('active');
+                            }
+
+                            pagination.append(pageLink);
+                        });
+
+                        pagination.append('<a href="#">&raquo;</a>')
+
+                        assetsContent.append(pagination);
+
+                        content.append(assetsContent);
+                    }
+                });
+        });
+
+        function saveAsset(userId, newAssets) {
+            $.post("./php/saveAsset-POST.php", {userId, newAssets},
+                function (message, status) {
+                    if (status === 'success') {
+                        alert(message);
+                    }
+                });
+        }
+
+        function selectPage(event, page) {
+            // Declare all variables
+            let i, pageElement, pageLink;
+
+            // Get the content element
+            const content = $('.content');
+
+            // Get all elements with class="page-content" and hide them
+            pageElement = content.getElementsByClassName('.assets page-content');
+            for (i = 0; i < pageElement.length; i++) {
+                pageElement[i].style.display = 'none';
+            }
+
+            // Get all elements with class="page-links" and remove the class "active"
+            pageLink = content.getElementsByClassName('page-links');
+            for (i = 0; i < pageLink.length; i++) {
+                pageLink[i].className = pageLink[i].className.replace(' active', '');
+            }
+
+            // Show the current page, and add an "active" class to the button that opened the tab
+            content.querySelector(`#page-${page}`).style.display = 'block';
+            event.currentTarget.className += ' active';
+        }
+
+        function logout() {
+            localStorage.removeItem('user_id');
+            localStorage.removeItem('user_username');
+
+            window.location.replace('./login.html');
+        }
+    </script>
+</head>
+<body>
+
+<div class="professor-container">
+    <h2 class="title">Hello, <span id="username"></span>!</h2>
+    <p>Below are all the assets assigned to you.</p>
+
+    <a class="logout" onclick="logout()">Logout</a>
+
+    <div class="content"></div>
+</div>
+
+</body>
+</html>

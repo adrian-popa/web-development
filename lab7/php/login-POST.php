@@ -1,32 +1,23 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "", "web_lab7");
+$con = mysqli_connect("localhost", "root", "", "web_exam");
 if (!$con) {
     die("Could not connect: " . mysqli_error());
 }
 
-$username = $_POST["username"];
-$password = $_POST["password"];
+$name = $_POST["name"];
 
-$result_professor = mysqli_query($con, "SELECT * FROM professor WHERE username='" . $username . "' AND password='" . $password . "'");
+$result_persons = mysqli_query($con, "SELECT * FROM Persons WHERE username='" . $username . "'");
 
-if (mysqli_fetch_array($result_professor)) {
+if ($person = mysqli_fetch_array($result_persons)) {
     $jsonData = array(
-        "username" => $username,
-        "userType" => "professor");
+        "id" => $person["id"],
+        "name" => $person["name"],
+        "role" => $person["role"]);
     echo json_encode($jsonData);
 } else {
-    $result_student = mysqli_query($con, "SELECT * FROM student WHERE username='" . $username . "' AND password='" . $password . "'");
-
-    if (mysqli_fetch_array($result_student)) {
-        $jsonData = array(
-            "username" => $username,
-            "userType" => "student");
-        echo json_encode($jsonData);
-    } else {
-        header("HTTP/1.1 401 Unauthorized");
-        exit;
-    }
+    header("HTTP/1.1 401 Unauthorized");
+    exit;
 }
 
 mysqli_close($con);

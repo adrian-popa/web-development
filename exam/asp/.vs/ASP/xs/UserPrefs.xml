@@ -1,0 +1,53 @@
+﻿<Properties StartupConfiguration="{FD381EED-FB56-4D24-82BD-2D1466A58393}|Default">
+  <MonoDevelop.Ide.ItemProperties.ASP PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASP/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="ASP/DataAbstractionLayer/DAL.cs" Line="10" Column="110" />
+      <File FileName="ASP/Program.cs" Line="16" Column="1" />
+      <File FileName="ASP/Startup.cs" Line="27" Column="35" />
+      <File FileName="ASP/Controllers/HomeController.cs" Line="23" Column="41" />
+      <File FileName="ASP/Controllers/LoginController.cs" Line="7" Column="14" />
+      <File FileName="ASP/Models/ErrorViewModel.cs" Line="3" Column="14" />
+      <File FileName="ASP/Models/Student.cs" Line="3" Column="14" />
+      <File FileName="ASP/Models/User.cs" Line="3" Column="14" />
+      <File FileName="ASP/Controllers/ProfessorController.cs" Line="8" Column="14" />
+      <File FileName="ASP/Controllers/StudentController.cs" Line="14" Column="10" />
+      <File FileName="ASP/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="ASP/Views/Home/Index.cshtml" Line="2" Column="30" />
+      <File FileName="ASP/Views/Home/Professor.cshtml" Line="1" Column="11" />
+      <File FileName="ASP/Views/Home/Login.cshtml" Line="2" Column="30" />
+      <File FileName="ASP/Views/Home/Student.cshtml" Line="20" Column="7" />
+      <File FileName="ASP/Views/_ViewImports.cshtml" Line="4" Column="1" />
+      <File FileName="ASP/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ASP/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="ASP/appsettings.json" Line="1" Column="1" />
+      <File FileName="ASP/Views/Shared/_Layout.cshtml" Line="6" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ASP" expanded="True">
+            <Node name="ASP" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataAbstractionLayer" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

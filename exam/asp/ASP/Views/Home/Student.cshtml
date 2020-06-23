@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Exam - Student";
+}
+
+<div class="student-container">
+    <h2 class="title">Hello, <span id="username"></span>!</h2>
+    <p>Your overall grade assigned by your professor is: <b><span id="grade"></span></b>. Keep it up!</p>
+
+    <a class="logout" onclick="logout()">Logout</a>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            const username = "@ViewBag.Username";
+
+            $('.title #username').text(username);
+
+            $.get("/Student/GetGrade", { username },
+                function (grade, status) {
+                    if (status === 'success') {
+                        $('p #grade').text(grade);
+                    }
+                });
+        });
+
+        function logout() {
+            $.post("/Login/Logout",
+                function (data, status) {
+                    if (status === 'success') {
+                        location.reload();
+                    }
+                });
+        }
+    </script>
+}

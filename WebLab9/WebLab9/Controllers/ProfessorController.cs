@@ -59,7 +59,6 @@ namespace WebLab9.Controllers
                 currentIndex += 1;
             }
 
-
             return result;
         }
 

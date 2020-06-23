@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Exam - Login";
+}
+
+<div class="login-container">
+    <h3 style="margin-bottom: 20px;">Welcome, please login to proceed!</h3>
+    <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        @{
+            string error = @ViewBag.Error;
+            if (error != null && error.Length != 0)
+            {
+                Func<dynamic, object> p = @<p class="error">
+                    @error
+                </p>;
+                @p(new object())
+            }
+        }
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#login-form").submit(function (e) {
+                const username = $("#username").val();
+                const password = $("#password").val();
+
+                $.post("/Login/Authenticate", { username, password },
+                    function (data, status) {
+                        if (status === 'success') {
+                            location.reload();
+                        }
+                    });
+
+                e.preventDefault();
+            });
+
+            $('.login-container').click(function () {
+                $('p.error').remove();
+            });
+        });
+    </script>
+}

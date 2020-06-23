@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 20px;
+}
+
+.login-container, .game-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container * {
+    display: block;
+    margin: 0 auto;
+}
+
+.login-container label {
+    width: 146px;
+}
+
+.login-container input {
+    margin-bottom: 10px;
+}
+
+.login-container p.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a.logout {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#joinGameBtn {
+    display: block;
+    margin: 20px auto 0;
+}
+
+#gameCanvas {
+    display: grid;
+    width: 180px;
+    grid-template-areas: "topLeft top topRight"
+                         "left center right"
+                         "bottomLeft bottom bottomRight";
+    grid-row-gap: 10px;
+    margin: 0 auto;
+}
+
+#gameCanvas > * {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#topLeft {
+    grid-area: topLeft;
+}
+
+#top {
+    grid-area: top;
+}
+
+#topRight {
+    grid-area: topRight;
+}
+
+#left {
+    grid-area: left;
+}
+
+#center {
+    grid-area: center;
+}
+
+#right {
+    grid-area: right;
+}
+
+#bottomLeft {
+    grid-area: bottomLeft;
+}
+
+#bottom {
+    grid-area: bottom;
+}
+
+#bottomRight {
+    grid-area: bottomRight;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Professor</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const name = localStorage.getItem('user_name');
+            const role = localStorage.getItem('user_role')
+
+            if (!name || role !== 'professor') {
+                window.location.replace('./login.html');
+            }
+
+            $('.title #name').text(name);
+
+            // const professorId = localStorage.getItem('user_id');
+
+            $.get("./php/professor-showStudents-GET.php",
+                function (studentsData, status) {
+                    if (status === 'success') {
+                        const students = JSON.parse(studentsData);
+
+                        const content = $('.content');
+
+                        const tabLinks = $('<div class="tab"></div>');
+
+                        content.append(tabLinks);
+
+                        students.forEach(studentName => {
+                            $.get("./php/professor-showCourseByStudent-GET.php", {studentName},
+                                function (studentsData, status) {
+                                    if (status === 'success') {
+                                        const tabLink = $(`<button class="tab-links" id="tab-${studentName}"
+                                            onclick="selectStudent(event, ${studentName})">${studentName}</button>`);
+                                        const tabContent = $(`<div id="${studentName}" class="tab-content">
+                                            <h3>${studentName}</h3>
+                                            <div class="students">${studentsData}</div>
+                                        `);
+
+                                        // If this is the first group, make the tab active by default.
+                                        if (students.indexOf(studentName) === 0) {
+                                            tabLink.addClass('active');
+                                            tabContent.css('display', 'block');
+                                        }
+
+                                        // Attach onchange event listener to grade input.
+                                        tabContent.find('#grades').each(function(index, object) {
+                                            $(object).on("focusout", function() {
+                                                const studentId = $(this).parent().parent().attr('id').split('-')[1];
+                                                const newGrades = $(this).val();
+
+                                                assignGrades(studentId, newGrades);
+                                            });
+                                        });
+
+                                        // Add pagination for students content.
+                                        const pagination = $('<div class="pagination"></div>')
+
+                                        pagination.append('<a href="#">&laquo;</a>')
+
+                                        tabContent.find('.students .page-content').each(function (index, object) {
+                                            const page = index + 1;
+                                            const pageLink = $(`<a class="page-links" onclick="selectPage(event, ${studentName}, ${page})">${page}</a>`);
+
+                                            if (index === 0) {
+                                                pageLink.addClass('active');
+                                            }
+
+                                            pagination.append(pageLink);
+                                        });
+
+                                        pagination.append('<a href="#">&raquo;</a>')
+
+                                        tabContent.append(pagination);
+
+                                        tabLinks.append(tabLink);
+                                        content.append(tabContent);
+                                    }
+                                });
+                        });
+                    }
+                });
+        });
+
+        function assignGrades(studentId, newGrades) {
+            $.post("./php/professor-assignGrades-POST.php", {studentId, newGrades},
+                function (message, status) {
+                    if (status === 'success') {
+                        alert(message);
+                    }
+                });
+        }
+
+        function selectStudent(event, studentName) {
+            // Declare all variables
+            let i, tabContent, tabLinks;
+
+            // Get all elements with class="tab-content" and hide them
+            tabContent = document.getElementsByClassName('tab-content');
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = 'none';
+            }
+
+            // Get all elements with class="tab-links" and remove the class "active"
+            tabLinks = document.getElementsByClassName('tab-links');
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(' active', '');
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(`tab-${studentName}`).style.display = 'block';
+            event.currentTarget.className += ' active';
+        }
+
+        function selectPage(event, studentName, page) {
+            // Declare all variables
+            let i, pageElement, pageLink;
+
+            // Look for elements only in the current course content
+            const content = document.getElementById(studentName);
+
+            // Get all elements with class="page-content" and hide them
+            pageElement = content.getElementsByClassName('page-content');
+            for (i = 0; i < pageElement.length; i++) {
+                pageElement[i].style.display = 'none';
+            }
+
+            // Get all elements with class="tab-links" and remove the class "active"
+            pageLink = content.getElementsByClassName('page-links');
+            for (i = 0; i < pageLink.length; i++) {
+                pageLink[i].className = pageLink[i].className.replace(' active', '');
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            content.querySelector(`#page-${page}`).style.display = 'block';
+            event.currentTarget.className += ' active';
+        }
+
+        function logout() {
+            localStorage.removeItem('user_id');
+            localStorage.removeItem('user_name');
+            localStorage.removeItem('user_role');
+
+            window.location.replace('./login.html');
+        }
+    </script>
+</head>
+<body>
+
+<div class="professor-container">
+    <h2 class="title">Hello, <span id="name"></span>!</h2>
+    <p>Below are all the students you can manage, displayed by course.</p>
+
+    <a class="logout" onclick="logout()">Logout</a>
+
+    <div class="content"></div>
+</div>
+
+</body>
+</html>

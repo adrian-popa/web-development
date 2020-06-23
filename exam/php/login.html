@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery-3.5.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            const username = localStorage.getItem('user_username');
+
+            if (username) {
+                window.location.replace('./assets.html');
+            }
+
+            $("#login-form").submit(function(e) {
+                const username = $("#username").val();
+                const password = $("#password").val();
+
+                $.post("./php/login-POST.php", {username, password},
+                    function (data, status) {
+                        if (status === 'success') {
+                            const response = JSON.parse(data)
+
+                            localStorage.setItem('user_id', response.id);
+                            localStorage.setItem('user_username', response.username);
+
+                            window.location.replace('./assets.html');
+                        }
+                    });
+
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="login-container">
+    <h3 style="margin-bottom: 20px;">Welcome, please login to proceed!</h3>
+    <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>

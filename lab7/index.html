@@ -10,15 +10,12 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            const username = localStorage.getItem('username');
-            const userType = localStorage.getItem('user_type')
+            const name = localStorage.getItem('user_name');
+            const role = localStorage.getItem('user_role')
 
-            if (username) {
-                if (userType === 'professor') {
+            if (name) {
+                if (role === 'professor') {
                     window.location.replace('./professor.html');
-                }
-                if (userType === 'student') {
-                    window.location.replace('./student.html');
                 }
             } else {
                 window.location.replace('./login.html');

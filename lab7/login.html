@@ -10,35 +10,29 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            const username = localStorage.getItem('username');
-            const userType = localStorage.getItem('user_type')
+            const name = localStorage.getItem('user_name');
+            const role = localStorage.getItem('user_type')
 
-            if (username) {
-                if (userType === 'professor') {
+            if (name) {
+                if (role === 'professor') {
                     window.location.replace('./professor.html');
-                }
-                if (userType === 'student') {
-                    window.location.replace('./student.html');
                 }
             }
 
             $("#login-form").submit(function(e) {
-                const username = $("#username").val();
-                const password = $("#password").val();
+                const name = $("#name").val();
 
-                $.post("./php/login-POST.php", {username, password},
+                $.post("./php/login-POST.php", {name},
                     function (data, status) {
                         if (status === 'success') {
                             const response = JSON.parse(data)
 
-                            localStorage.setItem('username', response.username);
-                            localStorage.setItem('user_type', response.userType);
+                            localStorage.setItem('user_id', response.id);
+                            localStorage.setItem('user_name', response.name);
+                            localStorage.setItem('user_role', response.role);
 
-                            if (response.userType === 'professor') {
+                            if (response.role === 'professor') {
                                 window.location.replace('./professor.html');
-                            }
-                            if (response.userType === 'student') {
-                                window.location.replace('./student.html');
                             }
                         }
                     });
@@ -51,12 +45,10 @@
 <body>
 
 <div class="login-container">
-    <h3 style="margin-bottom: 20px;">Welcome, please login to proceed!</h3>
+    <h3 style="margin-bottom: 20px;">Welcome, please input your name to proceed!</h3>
     <form id="login-form">
-        <label for="username">Username</label>
-        <input type="text" id="username">
-        <label for="password">Password</label>
-        <input type="password" id="password">
+        <label for="name">Name</label>
+        <input type="text" id="name">
         <button type="submit">Login</button>
     </form>
 </div>
